@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The Hollow Realm — Official website for the dark fantasy novel series by M. Rafay. Explore The Distant Ship and the secrets of the Hollow Realm.">
+
+    <title>The Hollow Realm | Official Website</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== LAYERED BACKGROUND ATMOSPHERE ===== -->
+    <div class="background" aria-hidden="true"></div>
+    <div class="fog" aria-hidden="true"></div>
+    <div class="fog-2" aria-hidden="true"></div>
+
+
+    <!-- ===================================================
+         NAVBAR
+    =================================================== -->
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Primary Navigation">
+
+            <a class="logo" href="index.html" aria-label="The Hollow Realm Home">
+                THE HOLLOW REALM
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" data-nav>HOME</a></li>
+                <li><a href="about.html" data-nav>ABOUT</a></li>
+                <li><a href="world.html" data-nav>WORLD</a></li>
+                <li><a href="characters.html" data-nav>CHARACTERS</a></li>
+                <li><a href="gallery.html" data-nav>GALLERY</a></li>
+            </ul>
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+            <a class="login-btn" href="login.html" data-login-btn aria-label="Login to your account">
+                <i class="fa-regular fa-user" aria-hidden="true"></i>
+                LOGIN
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- ===================================================
+         HERO
+    =================================================== -->
+    <main>
+
+        <section class="hero" aria-labelledby="hero-title">
+
+            <!-- ─── LEFT — Title & CTA ─── -->
+            <div class="hero-left">
+                <div class="hero-title-group">
+                    <h2 class="small-title">THE</h2>
+
+                    <h1 id="hero-title">
+                        HOLLOW<br>REALM
+                    </h1>
+                </div>
+
+                <div class="divider" aria-hidden="true"></div>
+
+                <h3>THE DISTANT SHIP</h3>
+
+                <p class="quote">
+                    Some secrets are buried.<br>
+                    Some are waiting.
+                </p>
+
+                <div class="buttons">
+                    <a class="primary-btn" href="highlights.html" aria-label="View Highlights">
+                        <i class="fa-solid fa-book-open" aria-hidden="true"></i>
+                        HIGHLIGHTS
+                    </a>
+                    <a class="secondary-btn" href="trailers.html" aria-label="Watch Trailers">
+                        <i class="fa-solid fa-play" aria-hidden="true"></i>
+                        TRAILERS
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- ─── RIGHT — Books & Magic Circle ─── -->
+            <div class="hero-right" aria-label="Featured books">
+
+                <!-- Glowing magic circle beneath books -->
+                <div class="magic-circle" aria-hidden="true"></div>
+
+                <!-- Back Book -->
+                <div class="book back-book floating-book" tabindex="0"
+                    aria-label="The Hollow Realm – The Distant Ship, back cover">
+                    <img src="assets/back-book.png" alt="The Hollow Realm back cover — The Distant Ship by M. Rafay">
+                </div>
+
+                <!-- Front Book -->
+                <div class="book front-book floating-book" tabindex="0"
+                    aria-label="The Hollow Realm – The Distant Ship, front cover">
+                    <img src="assets/front-book.png" alt="The Hollow Realm front cover — The Distant Ship by M. Rafay">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================
+             FEATURE CARDS
+        =================================================== -->
+        <section class="cards" aria-label="Site sections">
+
+            <!-- Card 1 — Highlights -->
+            <a class="card" href="highlights.html">
+                <div class="icon" aria-hidden="true">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div>
+                    <h2>HIGHLIGHTS</h2>
+                    <p>
+                        Explore key moments, quotes,
+                        and unforgettable parts of
+                        the journey.
+                    </p>
+                </div>
+            </a>
+
+            <!-- Card 2 — Trailers -->
+            <a class="card" href="trailers.html">
+                <div class="icon" aria-hidden="true">
+                    <i class="fa-solid fa-clapperboard"></i>
+                </div>
+                <div>
+                    <h2>TRAILERS</h2>
+                    <p>
+                        Watch official trailers and
+                        teasers from The Hollow
+                        Realm.
+                    </p>
+                </div>
+            </a>
+
+            <!-- Card 3 — The World -->
+            <a class="card" href="world.html">
+                <div class="icon" aria-hidden="true">
+                    <i class="fa-regular fa-compass"></i>
+                </div>
+                <div>
+                    <h2>THE WORLD</h2>
+                    <p>
+                        Discover the world, lore,
+                        factions, and the secrets
+                        hidden beneath.
+                    </p>
+                </div>
+            </a>
+
+            <!-- Card 4 — Buy Books -->
+            <a class="card" href="buy.html">
+                <div class="icon" aria-hidden="true">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div>
+                    <h2>BUY BOOKS</h2>
+                    <p>
+                        Buy the books and online
+                        PDFs here.
+                    </p>
+                </div>
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ===================================================
+         FOOTER
+    =================================================== -->
+    <footer>
+
+        <p>© 2025 M. Rafay. All rights reserved.</p>
+
+        <div class="socials" aria-label="Social media links">
+            <i class="fa-brands fa-facebook-f" title="Facebook" tabindex="0" role="link" aria-label="Facebook"></i>
+            <i class="fa-brands fa-x-twitter" title="X/Twitter" tabindex="0" role="link" aria-label="X / Twitter"></i>
+            <i class="fa-brands fa-instagram" title="Instagram" tabindex="0" role="link" aria-label="Instagram"></i>
+            <i class="fa-brands fa-youtube" title="YouTube" tabindex="0" role="link" aria-label="YouTube"></i>
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

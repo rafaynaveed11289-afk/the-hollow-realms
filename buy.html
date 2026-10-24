@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buy The Distant Ship — ebook, paperback, and bundle options. Demo checkout.">
+
+    <title>Buy the Books | The Hollow Realm</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ===== LAYERED BACKGROUND ATMOSPHERE ===== -->
+    <div class="background" aria-hidden="true"></div>
+    <div class="fog"        aria-hidden="true"></div>
+    <div class="fog-2"      aria-hidden="true"></div>
+
+
+    <!-- ===================================================
+         NAVBAR
+    =================================================== -->
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Primary Navigation">
+
+            <a class="logo" href="index.html" aria-label="The Hollow Realm Home">
+                THE HOLLOW REALM
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" data-nav>HOME</a></li>
+                <li><a href="about.html" data-nav>ABOUT</a></li>
+                <li><a href="world.html" data-nav>WORLD</a></li>
+                <li><a href="characters.html" data-nav>CHARACTERS</a></li>
+                <li><a href="gallery.html" data-nav>GALLERY</a></li>
+            </ul>
+
+            <a class="login-btn" href="login.html" data-login-btn aria-label="Login to your account">
+                <i class="fa-regular fa-user" aria-hidden="true"></i>
+                LOGIN
+            </a>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="page-hero" aria-labelledby="page-title">
+            <p class="eyebrow">BUY THE BOOKS</p>
+            <h1 id="page-title">GET THE<br>DISTANT SHIP</h1>
+            <p class="lede">
+                Choose a format below. This is a demo checkout — no
+                real payment will be taken.
+            </p>
+        </section>
+
+        <section class="page-section">
+            <form id="buy-form" novalidate>
+                <div class="buy-layout">
+
+                    <div>
+                        <div class="format-list">
+
+                            <label class="format-option">
+                                <span class="format-name">
+                                    <input type="radio" name="format" value="ebook" checked>
+                                    <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+                                    Ebook (PDF)
+                                </span>
+                                <span class="format-price">$9.99</span>
+                            </label>
+
+                            <label class="format-option">
+                                <span class="format-name">
+                                    <input type="radio" name="format" value="paperback">
+                                    <i class="fa-solid fa-book" aria-hidden="true"></i>
+                                    Paperback
+                                </span>
+                                <span class="format-price">$18.99</span>
+                            </label>
+
+                            <label class="format-option">
+                                <span class="format-name">
+                                    <input type="radio" name="format" value="bundle">
+                                    <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                                    Ebook + Paperback Bundle
+                                </span>
+                                <span class="format-price">$24.99</span>
+                            </label>
+
+                        </div>
+
+                        <div class="field">
+                            <label for="buy-name">NAME ON CARD</label>
+                            <input type="text" id="buy-name" placeholder="Jane Doe" autocomplete="cc-name">
+                        </div>
+                        <div class="field">
+                            <label for="buy-card">CARD NUMBER</label>
+                            <input type="text" id="buy-card" placeholder="4242 4242 4242 4242" autocomplete="cc-number" inputmode="numeric">
+                        </div>
+                        <div class="form-row">
+                            <div class="field">
+                                <label for="buy-expiry">EXPIRY</label>
+                                <input type="text" id="buy-expiry" placeholder="MM / YY" autocomplete="cc-exp">
+                            </div>
+                            <div class="field">
+                                <label for="buy-cvc">CVC</label>
+                                <input type="text" id="buy-cvc" placeholder="123" autocomplete="cc-csc" inputmode="numeric">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-summary">
+                        <h3>ORDER SUMMARY</h3>
+                        <p class="note-soft">The Distant Ship — Book One</p>
+                        <div class="order-total">
+                            <span>Total</span>
+                            <span id="order-total-amount">$9.99</span>
+                        </div>
+                        <button type="submit" class="primary-btn submit-btn" style="margin-top: 26px;">
+                            <i class="fa-solid fa-lock" aria-hidden="true"></i>
+                            COMPLETE DEMO PURCHASE
+                        </button>
+                        <p class="form-message" id="buy-message"></p>
+                    </div>
+
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+
+    <!-- ===================================================
+         FOOTER
+    =================================================== -->
+    <footer>
+
+        <p>© 2025 M. Rafay. All rights reserved.</p>
+
+        <div class="socials" aria-label="Social media links">
+            <i class="fa-brands fa-facebook-f"  title="Facebook"  tabindex="0" role="link" aria-label="Facebook"></i>
+            <i class="fa-brands fa-x-twitter"   title="X/Twitter" tabindex="0" role="link" aria-label="X / Twitter"></i>
+            <i class="fa-brands fa-instagram"   title="Instagram" tabindex="0" role="link" aria-label="Instagram"></i>
+            <i class="fa-brands fa-youtube"     title="YouTube"   tabindex="0" role="link" aria-label="YouTube"></i>
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
