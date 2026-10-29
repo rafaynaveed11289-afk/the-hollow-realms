@@ -72,7 +72,7 @@ function applyLoginState() {
     const user = localStorage.getItem('hollowrealm_demo_user');
     if (!user) return;
 
-    loginBtn.innerHTML = `<i class="fa-solid fa-user-check" aria-hidden="true"></i> ${escapeHtml(user)}`;
+    loginBtn.innerHTML = `<i class="fa-solid fa-user-check" aria-hidden="true"></i> <span class="login-name">${escapeHtml(user)}</span>`;
     loginBtn.setAttribute('href', '#');
     loginBtn.setAttribute('aria-label', 'Log out of your demo account');
 
@@ -245,10 +245,12 @@ function initGalleryLightbox() {
 
     // Where the enlarged image sits WITHOUT any transform applied
     // (offset* ignores transforms, so this is safe mid-animation).
+    // On phones the lightbox itself scrolls so a map can be panned; offset*
+    // ignores that scroll too, so subtract it to get on-screen coordinates.
     function layoutRect(el) {
         return {
-            left: el.offsetLeft,
-            top: el.offsetTop,
+            left: el.offsetLeft - box.scrollLeft,
+            top: el.offsetTop - box.scrollTop,
             width: el.offsetWidth,
             height: el.offsetHeight
         };
@@ -285,6 +287,10 @@ function initGalleryLightbox() {
 
             box.classList.add('open');
             document.body.style.overflow = 'hidden';
+
+            // every map opens at its left edge (the overlay keeps its scroll offset between opens)
+            box.scrollLeft = 0;
+            box.scrollTop = 0;
 
             const shrunk = shrinkTo(item.getBoundingClientRect(), layoutRect(boxImg));
 
